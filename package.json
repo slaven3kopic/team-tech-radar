@@ -1,0 +1,13 @@
+{
+  "name": "team-tech-radar",
+  "version": "1.0.0",
+  "description": "Team tech radar",
+  "main": "index.js",
+  "author": "collaboration Factory AG",
+  "scripts": {
+    "start": "npm i && http-server -o"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

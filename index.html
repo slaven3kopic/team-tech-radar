@@ -1,0 +1,55 @@
+<html>
+<head>
+    <style>
+        button {
+            color: #ffffff;
+            background: #0078bd;
+            border: 0.0625rem solid #0078bd;
+            padding: 0.4375rem 0.4375rem;
+            font-size: 0.875rem;
+            transition: none;
+            border-radius: 4px;
+        }
+
+        #radar-container {
+            background: white;
+        }
+
+        #radar-description {
+            padding: 16px
+        }
+    </style>
+</head>
+<body>
+    <button onclick="download()">Download</button>
+    <div id="radar-container">
+        <svg id="radar"></svg>
+        <div id="radar-description">
+            <h3>What is the Team Tech Radar?</h3>
+            The Team Tech Radar is a list of technologies used by a particular team, complemented by an assessment result,
+            called <i>ring assignment</i>. Four rings are used with the following semantics:
+            <br>
+            <br>
+            <b>ADOPT</b> — Technologies the team have high confidence in to serve the teams purpose, also in large scale.
+            Technologies with a usage culture in the teams production environment, low risk and recommended to be widely used.
+            <br>
+            <b>TRIAL</b> — Technologies that the team have seen work with success in project work to solve a real problem;
+            first serious usage experience that confirm benefits and can uncover limitations. TRIAL technologies are slightly
+            more risky; some engineers in our team walked this path and will share knowledge and experiences.
+            <br>
+            <b>ASSESS</b> — Technologies that are promising and have clear potential value-add for the team; technologies
+            worth to invest some research and prototyping efforts in to see if it has impact. ASSESS technologies have higher
+            risks; they are often brand new and highly unproven in our team. You will find some engineers that have knowledge
+            in the technology and promote it, you may even find engineers that have started a prototyping effort.
+            <br>
+            <b>HOLD</b> — Technologies not recommended to be used for new projects. Technologies that the team thinks are not
+            (yet) worth to (further) invest in. HOLD technologies should not be used for new projects, but usually can be
+            continued for existing projects.
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="http://zalando.github.io/tech-radar/release/radar-0.8.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.js" integrity="sha512-zPMZ/3MBK+R1rv6KcBFcf7rGwLnKS+xtB2OnWkAxgC6anqxlDhl/wMWtDbiYI4rgi/NrCJdXrmNGB8pIq+slJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
